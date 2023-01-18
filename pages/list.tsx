@@ -1,4 +1,5 @@
 import { InferGetServerSidePropsType } from "next";
+import Header from "../components/Header";
 
 type Cards = {
     survey_id : string
@@ -24,6 +25,7 @@ function List({ cards }: InferGetServerSidePropsType<typeof getStaticProps>) {
     // 
     return (
         <>
+        <Header/>
         <div className="bg-slate-200">
         <div className="flex flex-row space-x-8 justify-center h-screen items-center w-full">
         {
